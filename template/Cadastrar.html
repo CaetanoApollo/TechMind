@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechMind - Cadastrar</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='CSS/style.css')}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="{{url_for('static', filename='assets/TechMind.png')}}" type="image/x-icon">
+</head>
+
+<body>
+
+  <body>
+    <header>
+
+      <img id="logo" src="{{url_for('static', filename='assets/TechMind.png')}}">
+
+      <input id="barraBusca" name="search" type="text" placeholder="Buscar">
+
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/noticias">Notícias Cadastradas</a></li>
+            <li><a href="/cadastrar">Cadastrar notícias</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu-bg" id="menu-bg"></div>
+
+    </header>
+
+    <main id="Cadastrar">
+      <h1 id="titulo-cadastro">Cadastro de Notícias</h1>
+
+      <form action="/cadastrar" method="post">
+        <div id="Cadastro">
+        <label class="title-default" for="titulo">
+          <p>Título da notícia:</p>
+          <input type="text" class="titulo-noticia" id="titulo" name="titulo">
+        </label>
+        <div id="Conteudo">
+        <label class="title-default" for="conteudo">Conteúdo da notícia:</label>
+        <textarea id="conteudo" name="conteudo" cols="40" rows="20"></textarea>
+        </div>
+        <input id="button-register" type="submit" value="Cadastrar">
+        </div>
+      </form>
+
+
+    </main>
+  </body>
+
+  <script src="{{url_for('static', filename='JS/Script.js')}}"></script>
+</body>
+
+</html>

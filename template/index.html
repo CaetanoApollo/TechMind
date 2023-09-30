@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechMind</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='CSS/style.css')}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="{{url_for('static', filename='assets/TechMind.png')}}" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+
+    <img id="logo" src="{{url_for('static', filename='assets/TechMind.png')}}">
+
+    <input id="barraBusca" name="search" type="text" placeholder="Buscar">
+   
+    <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/noticias">Notícias Cadastradas</a></li>
+          <li><a href="/cadastrar">Cadastrar notícias</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="menu-bg" id="menu-bg"></div>
+
+  </header>
+
+  <main>
+    <section id="Home">
+      <a href="/noticias">
+        <div class="notícias-home">
+          <img class="img-tech" src="{{url_for('static', filename='assets/noticia.webp')}}" alt="">
+          <h2>Notícias cadastradas</h2>
+        </div>
+      </a>
+
+      <a href="/mundotrabalho">
+        <div class="notícias-home">
+          <img class="img-mundotrabalho" src="{{url_for('static', filename='assets/Mundo do trabalho.jpg')}}" alt="">
+          <h2>Mundo do trabalho</h2>
+        </div>
+      </a>
+
+      <a href="/plagio">
+        <div class="notícias-home">
+          <img class="img-home" src="{{url_for('static', filename='assets/Plágio-img.svg')}}" alt="">
+          <h2>Plágio</h2>
+        </div>
+      </a>
+    </section>
+  </main>
+
+
+<script src="{{url_for('static', filename='JS/Script.js')}}"></script>
+</body>
+
+</html>

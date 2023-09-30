@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #0D192B;
+}
+
+header{
+    background-color: #0C5149;
+    height: 80px;
+    
+    display: flex;
+    align-items: center;
+}
+
+
+/* Home (index) */
+#logo{
+    height: 120px;
+}
+
+  
+#barraBusca {
+    height: 25px;
+    width: 25vw;
+    padding-left: 10px;
+    border-radius: 50px;
+    border: none;
+}
+
+/* Menu */
+#menu {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+#menu-bar {
+  width: 30px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+  justify-self: end;
+  align-self: flex-end;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: black;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.5s ease;
+  display: none;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: #09BF83;
+}
+
+.menu-bg,
+#menu {
+  top: 0;
+  right: 60px;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 30px;
+  height: 20px;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(#0C5149, #0C5149);
+  border-bottom-left-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.change {
+display: block;
+}
+
+.change .bar {
+  background-color: rgb(0, 0, 0);
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 300px;
+  height: 200px;
+  transform: translate(20%, 10%);
+}
+
+.notícias-home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notícias-home img{
+  border-radius: 10px;
+  width: 30vw;
+}
+
+.img-mundotrabalho, .img-tech{
+  height: 37vh;
+}
+
+#Home a{
+  color: #0C5149;
+  text-decoration: none;
+}
+
+.notícias-home:hover{
+  color: #09BF83;
+}
+
+#Home{
+  display: flex;
+  justify-content: space-between;
+  margin: 150px 30px; 
+}
+
+
+/* Cadastrar */
+
+#titulo-cadastro{
+  color: #0A8F6A;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+#Cadastro{
+background-color: #0C5149;
+height: 65vh;
+width: 30vw;
+border-radius: 10px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.titulo-noticia{
+background-color: #0A8F6A;
+width: 20vw;
+border-radius: 6px;
+padding: 10px;
+border: none;
+margin-bottom: 20px;
+}
+
+#Cadastrar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#conteudo{
+  border-radius: 10px;
+  background-color: #09BF83;
+  border: none;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-default{
+  color: #0D192B;
+  font-size: 17px;
+  text-align: center;
+}
+
+textarea:focus, input:focus, select:focus {
+  border: 0 none;
+  outline: 0;
+}
+
+#button-register{
+  background-color: #09BF83;
+  color: #0D192B;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#button-register:hover{
+  background-color: #0D192B;
+  color: #09BF83;
+}
+
+/* noticias cadastradas */
+
+#back{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0A8F6A;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#back:hover{
+  font-weight: bold;
+  color: #09BF83;
+}
+
+.news-none{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0A8F6A;
+  font-size: 20px;
+  margin-top: 5vh;
+}
+
+#registered-news{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-title{
+  margin-top: 20px;
+  color: #0A8F6A;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0px 30vh;
+}
+
+.news-contend{
+  color: #09BF83;
+  padding: 10px 50vh;
+  text-align: justify;
+}
+
+/* Mundo do trabalho */
+
+#mundo-trabalho{
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+}
+
+#mundo-trabalho>h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #0A8F6A;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+
+.Mundo>h2{
+  color: #0A8F6A;
+  font-size: 25px;
+  text-align: center;
+  padding: 50px;
+}
+
+.Mundo>p{
+  padding: 20px;
+  border-radius: 10px;
+  color: #0A8F6A;
+  background-color: #0C5149;
+}
+
+/* Plágio */
+
+#plágio>h1{
+  color: #0A8F6A;
+  font-size: 40px;
+  padding: 50px;
+  text-align: center;
+}
+
+.Fotos{
+  display: flex;
+  padding: 30px;
+  padding-left: 125px;
+  padding-right: 125px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Fotos>img{
+  height: 700px;
+  width: 350px;
+}

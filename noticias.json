@@ -1,0 +1,29 @@
+{
+    "noticias": [
+        {
+            "id": 1,
+            "titulo": "Retorno MiniBlog - 01/09",
+            "conteudo": "At\u00e9 o momento, a tarefa vem sendo executada de acordo com o solicitado. Parab\u00e9ns aos alunos! \r\n\r\n, Prof. Bruno. "
+        },
+        {
+            "id": 2,
+            "titulo": "As rea\u00e7\u00f5es qu\u00edmicas auxiliam nas transforma\u00e7\u00f5es de subst\u00e2ncias em novos compostos!",
+            "conteudo": "\"Na natureza, nada se perde, nada se cria. Tudo se transforma. \" Lavoisier."
+        },
+        {
+            "id": 3,
+            "titulo": "Reflex\u00e3o sobre cria\u00e7\u00e3o",
+            "conteudo": "\"Criar \u00e9 t\u00e3o dif\u00edcil ou t\u00e3o f\u00e1cil como viver. E \u00e9, do mesmo modo, necess\u00e1rio\". Fayga Ostrower"
+        },
+        {
+            "id": 4,
+            "titulo": "Teste",
+            "conteudo": "Teste pp"
+        },
+        {
+            "id": 5,
+            "titulo": "Teste",
+            "conteudo": "2123"
+        }
+    ]
+}
